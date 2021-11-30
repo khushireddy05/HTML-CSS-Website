@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class= "cnt">
+	<nav>
+		<div class="logo">
+			<img src="images/logo.png" height="90px" width="200px">
+		</div>
+		<div class="nav-options" id="navOptions">
+			<i class="fa fa-times" onclick="hide()"></i>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="product.html">EXPLORE</a></li>
+				<li><a href="about.html">ABOUT US</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="show()"></i>
+	</nav>
+
+</section>
+ <!-- contact us -->
+<section class="location">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.31698030324!2d78.26796088406375!3d17.412299802585398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1627557031404!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+	</iframe>
+</section>
+
+<section class="contact-us">
+	<div class="horizontal">
+		<div class="contact-col">
+			<div>
+				<i class="fa fa-home"></i>
+				<span>
+					<h5>ABC Road, Xyz Building</h5>
+					<p>Hyderabad, Telangana, IN</p>
+				</span>
+			</div>
+			<div>
+				<i class="fa fa-phone"></i>
+				<span>
+					<h5>+91 9876543389</h5>
+					<p>Monday to Saturday, 10AM to 9PM</p>
+				</span>
+			</div>
+			<div>
+				<i class="fa fa-envelope"></i>
+				<span>
+					<h5>info@something.com</h5>
+					<p>Email us your query</p>
+				</span>
+			</div>
+		</div>
+<div class="contact-col">
+	<form action="form-handler.php" method="post">
+		<input type="text" name="name" placeholder="Enter your Name" required>
+		<input type="email" name="email" placeholder="Enter your Email Address" required>
+		<input type="text" name="subject" placeholder="Enter Subject for the Mail" required>
+		<textarea rows="8" name="message" placeholder="Message" required></textarea>
+		<button type="submit" class="explore-btn red-btn">Send Message</button>
+	</form>
+</div>
+	</div>
+</section>
+
+
+
+<!-- footer -->
+<section class="footer">
+	<h4>About Us</h4>
+	<p>mnvis fvjs akfjl dajvbnvo ekjwf vkjdfbfjfddkfj fjvnfo dfjnfd dfjnfd jdfna jfsd jdsfbak fvjsfnk kfjnbsjdf jfdnd</p>
+	<div class="icons">
+		<i class="fa fa-facebook"></i>
+		<i class="fa fa-twitter"></i>
+		<i class="fa fa-instagram"></i>
+		<i class="fa fa-whatsapp"></i>
+	</div>
+	<p>Made with <i class="fa fa-heart"></i> by Khushi</p>
+</section>
+
+
+
+<!-- menu for mobile -->
+<script>
+	var navOptions = document.getElementById('navOptions')
+	function show(){
+		navOptions.style.right = "0";
+	}
+	function hide(){
+		navOptions.style.right = "-200px";
+	}
+
+</script>
+
+</body>
+</html>
